@@ -83,8 +83,8 @@ def synthesize_new_memories(client, model, chat_history):
             "and update the provided JSON profile layout. Extract deep, long-term meaningful facts "
             "about the user: who they are, their cyber/coding projects, technologies they use, or life context. "
             "Merge new data seamlessly into the array structures without erasing existing vital context. "
-            "Output ONLY valid JSON matching the exact key signatures given. No markdown wrappers, no ```json" 
-``` blocks."
+            """Output ONLY valid JSON matching the exact key signatures given. No markdown wrappers, no ```json 
+``` blocks."""
         )
         
         analysis_payload = f"CURRENT_PROFILE_JSON:\n{json.dumps(current_profile)}\n\nRECENT_CONVERSATION:\n{conversation_corpus}"
